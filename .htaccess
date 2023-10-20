@@ -1,5 +1,8 @@
-.htaccess // এক্সটেনশন রিমুভ করা
+এক্সটেনশন রিমুভ করার জন্য
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f //এখান থেকে যা সেট করবো সেটা ডিলেট হবে । 
 RewriteRule ^(.*)$ $1.php//এখান থেকে যা সেট করবো সেটা ডিলেট হবে । 
+
+404.php পেজে নিয়ে যাওয়ার জন্য 
+ErrorDocument 404 /404.php
