@@ -1,0 +1,5 @@
+.htaccess // এক্সটেনশন রিমুভ করা
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f //এখান থেকে যা সেট করবো সেটা ডিলেট হবে । 
+RewriteRule ^(.*)$ $1.php//এখান থেকে যা সেট করবো সেটা ডিলেট হবে । 
