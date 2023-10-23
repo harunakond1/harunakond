@@ -18,3 +18,5 @@ $slug = trim($slug, '-');
 
 // ইউআরএল তৈরি করুন
 $url = $slug;
+২ টা ক্লিন ইউআরএল তৈরী করার জন্য সিস্টেম
+RewriteRule ^posts/([0-9]+)/([a-zA-Z0-9-]+)$ posts.php?post_id=$1&category=$2 [L]
