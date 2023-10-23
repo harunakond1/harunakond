@@ -1,5 +1,7 @@
 এক্সটেনশন রিমুভ করার জন্য
-RewriteEngine on
+RewriteEngine On
+RewriteRule ^posts/([0-9]+)$ posts.php?post_id=$1 [L]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f //এখান থেকে যা সেট করবো সেটা ডিলেট হবে । 
 RewriteRule ^(.*)$ $1.php//এখান থেকে যা সেট করবো সেটা ডিলেট হবে । 
